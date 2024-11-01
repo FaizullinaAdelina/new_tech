@@ -11,3 +11,5 @@ ENV MySQL HOST=mysql.railway.internal \
 # Копируем PHP-файл внутрь контейнера
 COPY index.php /var/www/html/
 COPY ./style.css /var/www/html/style.css
+
+EXPOSE 8080
