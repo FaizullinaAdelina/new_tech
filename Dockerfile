@@ -1,9 +1,12 @@
 FROM php:7.4-apache
 
-# Устанавливаем расширения для работы с MySQL и PDO
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Устанавливаем расширения для работы с MySQL
+RUN docker-php-ext-install mysql
 
-RUN echo "ServerName newtech-production.up.railway.app" >> /etc/apache2/apache2.conf
+ENV MySQL HOST=mysql.railway.internal \
+    MYSQL_USER=root \
+    MYSQL_PASSWORD=YcEjpyfnSmmOwkfXnWpZXpmvOzSUrIKv  \
+    MYSQL_DATABASE=railway
 
 # Копируем PHP-файл внутрь контейнера
 COPY index.php /var/www/html/
