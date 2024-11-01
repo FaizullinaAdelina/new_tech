@@ -1,0 +1,63 @@
+body {
+    background-color: #d3e0ea; /* светло-голубой фон */
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"].reset-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+
+h1, h2 {
+    color: #005f73; /* тёмно-голубой для заголовков */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%; /* полная ширина */
+    padding: 10px; /* отступы */
+    margin: 10px 0; /* отступы сверху и снизу */
+    border: 1px solid #00d5ff; /* тёмно-голубая граница */
+    border-radius: 5px; /* закругление углов */
+}
+
+input[type="submit"] {
+    background-color: #00d5ff; /* цвет кнопок */
+    color: white; /* цвет текста кнопок */
+    padding: 10px 20px; /* отступы кнопок */
+    border: none; /* без границ */
+    border-radius: 5px; /* закругление углов кнопок */
+    cursor: pointer; /* курсор для кнопок */
+}
+input[type="submit"].reset-button:hover {
+    background-color: rgb(141, 3, 3); /* Цвет кнопки при наведении */
+    color: rgb(255, 255, 255); /* Цвет текста при наведении (можно изменить по желанию) */
+}
+
+input[type="submit"]:hover {
+    background-color: #0059ff; /* цвет кнопок при наведении */
+}
+
+table {
+    width: 100%; /* ширина таблицы */
+    border-collapse: collapse; /* убираем двойные границы */
+}
+
+th, td {
+    border: 1px solid #00d5ff; /* тёмно-голубая граница */
+    padding: 10px; /* отступы ячеек */
+    text-align: left; /* выравнивание текста */
+}
+
+th {
+    background-color: #005f73; /* фон заголовков таблицы */
+    color: white; /* цвет текста заголовков */
+}
+
