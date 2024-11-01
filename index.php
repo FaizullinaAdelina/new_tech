@@ -10,10 +10,10 @@
 
 <?php
 class Database {
-    private $host = "mysql";
-    private $db_name = "Student"; // Имя базы данных
+    private $host = "mysql.railway.internal";
+    private $db_name = "railway"; // Имя базы данных
     private $username = "root"; // Имя пользователя
-    private $password = "root"; // Пароль
+    private $password = "YcEjpyfnSmmOwkfXnWpZXpmvOzSUrIKv"; // Пароль
     public $conn;
 
     public function getConnection() {
