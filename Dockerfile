@@ -1,7 +1,7 @@
 FROM php:7.4-apache
 
 # Устанавливаем расширения для работы с MySQL
-RUN docker-php-ext-install mysql pdo_mysql
+RUN docker-php-ext-install mysql pdo pdo_mysql
 
 ENV MySQL HOST=mysql.railway.internal \
     MYSQL_USER=root \
