@@ -1,5 +1,5 @@
 FROM php:7.4-apache
-
+EXPOSE 8080
 # Устанавливаем расширения для работы с MySQL и PDO
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
